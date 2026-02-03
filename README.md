@@ -8,5 +8,5 @@ Aplicação em Python (Tkinter) para consulta de informações públicas de núm
 - Mostra a operadora (quando disponível)
 - Mostra o horário local aproximado
 
-> ⚠️ Este projeto não rastreia localização em tempo real.  
+> Este projeto não rastreia localização em tempo real.  
 > As informações são baseadas em metadados públicos do número.
