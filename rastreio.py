@@ -20,6 +20,8 @@ app.resizable(False,False)
 app.title("Rastreio de Telefone")
 
 def rastreio(): 
+    '''Tenta rastrear um número de telefone para encontrar o seu país, região, operadora e horário local aproximado.
+    Se o número for inválido, ou se não for possível rastrear a informação, o método configura as labels com mensagens de erro.'''
     try:
         numero = entry.get().strip()
 
@@ -65,12 +67,12 @@ def rastreio():
     
 
 # adicionando ícone
-icon = Image.open("smartphone.png")
+icon = Image.open("rastreio/imagens/smartphone.png")
 photo = ImageTk.PhotoImage(icon)
 app.wm_iconphoto(False, photo)  
 
 # logo do sistema
-logo = PhotoImage(file='smartphone_logo.png')
+logo = PhotoImage(file='rastreio/imagens/smartphone_logo.png')
 Label(app, image=logo).place(x=-50, y=35)
 
 titulo = Label(app, text="Rastreio de Telefone", font="verdana 15 bold", fg="black", bg="white")
@@ -82,7 +84,7 @@ entrada_numero = Entry(app, textvariable=entry, width=14, font="verdana 15", fg=
 entrada_numero.place(x=180, y=260)
 
 # botão de rastreio
-rastrear = PhotoImage(file='push.png')
+rastrear = PhotoImage(file='rastreio/imagens/push.png')
 botao_rastreio = Button(app, image=rastrear, width=50, height=50, bg="gray", activebackground="green", cursor="hand2", bd=2, command=rastreio)
 botao_rastreio.place(x=180, y=490)
 
