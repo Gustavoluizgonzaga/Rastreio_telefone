@@ -67,12 +67,12 @@ def rastreio():
     
 
 # adicionando ícone
-icon = Image.open("rastreio/imagens/smartphone.png")
+icon = Image.open("imagens/smartphone.png")
 photo = ImageTk.PhotoImage(icon)
 app.wm_iconphoto(False, photo)  
 
 # logo do sistema
-logo = PhotoImage(file='rastreio/imagens/smartphone_logo.png')
+logo = PhotoImage(file='imagens/smartphone_logo.png')
 Label(app, image=logo).place(x=-50, y=35)
 
 titulo = Label(app, text="Rastreio de Telefone", font="verdana 15 bold", fg="black", bg="white")
@@ -84,7 +84,7 @@ entrada_numero = Entry(app, textvariable=entry, width=14, font="verdana 15", fg=
 entrada_numero.place(x=180, y=260)
 
 # botão de rastreio
-rastrear = PhotoImage(file='rastreio/imagens/push.png')
+rastrear = PhotoImage(file='imagens/push.png')
 botao_rastreio = Button(app, image=rastrear, width=50, height=50, bg="gray", activebackground="green", cursor="hand2", bd=2, command=rastreio)
 botao_rastreio.place(x=180, y=490)
 
@@ -100,6 +100,7 @@ operadora.place(x=90, y=430)
 
 horas = Label(app, text="Horário: ", font="verdana 8", fg="black", bg="white")
 horas.place(x=90, y=450)
+
 
 
 
